@@ -1,0 +1,19 @@
+{
+  // 指定できるoptionについては`tsc --help`実行
+  "compilerOptions": {
+    // コードの実行環境のライブラリ指定
+    "lib": ["ES2015"],
+    // TSCがどのモジュールシステムにコンパイルするかを指定
+    "module": "commonjs",
+    // TSCが生成したjsコードをどのディレクトリに格納するか
+    "outDir": "dist",
+    // 変換後のソース(js)と元のソース(ts)を関連付けるかどうかを指定
+    "sourceMap": true,
+    // strictモードを使用するかどうか。基本的にtrue
+    "strict": true,
+    // TSCがどのjsバージョンにコンパイルするかを指定
+    "target": "es2015"
+  },
+  // TSCがTypeScriptファイルを検査する場所を指定
+  "include": ["src"]
+}
